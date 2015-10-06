@@ -2,175 +2,44 @@
 <html>
 <head>
     <!-- Stop reading the code and get back to work. It's just a google custom search, nothing to see here -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- HAHA. Very funny -->
+    
     <title>TU Dresden Erweiterte Suche</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="TU Dresden Erweiterte Suche" />
+    
     <script src="http://www.google.com/jsapi" type="text/javascript"></script>
-    <script>
-      (function() {
-        var cx = '008899261864992774847:oqu5cc0mj4q';
-        var gcse = document.createElement('script');
-        gcse.type = 'text/javascript';
-        gcse.async = true;
-        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-            '//cse.google.com/cse.js?cx=' + cx;
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(gcse, s);
-      })();
-    </script>
-    <meta name="description" content="TU Dresden Erweiterte Suche">
-
+    <script src="script.js"></script>
+    
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
     <link rel="stylesheet" href="http://www.google.com/cse/style/look/minimalist.css" type="text/css" />
-    <style type="text/css">
-      .gsc-control-cse {
-        font-family: Arial, sans-serif;
-        border-color: #FFFFFF;
-        background-color: #FFFFFF;
-      }
-      input.gsc-input {
-        border-color: #777777;
-      }
-      input.gsc-search-button {
-        border-color: #427BD6;
-        background-color: #427BD6;
-      }
-      .gsc-tabHeader.gsc-tabhInactive {
-        border-color: #FFF;
-        background-color: #FFF;
-      }
-      .gsc-tabHeader.gsc-tabhActive {
-        border-color: #FFF;
-        background-color: #FFF;
-      }
-      .gsc-tabsArea {
-        border-color: #FFF;
-      }
-      .gsc-webResult.gsc-result {
-        border-color: #FFFFFF;
-        background-color: #FFFFFF;
-      }
-      .gsc-webResult.gsc-result:hover {
-        border-color: #FFF;
-        background-color: #FFFFFF;
-      }
-      .gs-webResult.gs-result a.gs-title:link,
-      .gs-webResult.gs-result a.gs-title:link b {
-        color: #336699;
-      }
-      .gs-webResult.gs-result a.gs-title:visited,
-      .gs-webResult.gs-result a.gs-title:visited b {
-        color: #336699;
-      }
-      .gs-webResult.gs-result a.gs-title:hover,
-      .gs-webResult.gs-result a.gs-title:hover b {
-        color: #336699;
-      }
-      .gs-webResult.gs-result a.gs-title:active,
-      .gs-webResult.gs-result a.gs-title:active b {
-        color: #777777;
-      }
-      .gsc-cursor-page {
-        color: #336699;
-      }
-      a.gsc-trailing-more-results:link {
-        color: #336699;
-      }
-      .gs-webResult.gs-result .gs-snippet {
-        color: #333333;
-      }
-      .gs-webResult.gs-result .gs-visibleUrl {
-        color: #777;
-        font-weight: normal;
-      }
-      .gs-webResult.gs-result .gs-visibleUrl-short {
-        color: #777;
-          font-weight: normal;
-      }
-      .gsc-cursor-box {
-        border-color: #FFFFFF;
-      }
-      .gsc-results .gsc-cursor-page {
-        border-color: #777777;
-        background-color: #FFFFFF;
-      }
-      .gsc-results .gsc-cursor-page.gsc-cursor-current-page {
-        border-color: #333333;
-        background-color: #333333;
-      }
-      .gs-promotion.gs-result {
-        border-color: #CCCCCC;
-        background-color: #E6E6E6;
-      }
-      .gs-promotion.gs-result a.gs-title:link {
-        color: #336699;
-      }
-      .gs-promotion.gs-result a.gs-title:visited {
-        color: #336699;
-      }
-      .gs-promotion.gs-result a.gs-title:hover {
-        color: #336699;
-      }
-      .gs-promotion.gs-result a.gs-title:active {
-        color: #336699;
-      }
-      .gs-promotion.gs-result .gs-snippet {
-        color: #333333;
-      }
-      .gs-promotion.gs-result .gs-visibleUrl,
-      .gs-promotion.gs-result .gs-visibleUrl-short {
-        color: #00CC00;
-      }
-
-      div#footer {
-        font-size: .8em;
-        text-align: center;
-        color: #444;
-      }
-
-      div.gsc-tabsArea {
-        display: none;
-      }
-
-      div.topbar {
-        font-family: arial, sans-serif;
-        margin-left: 20px;
-      }
-
-      div.topbar h2 a {
-        color: #336699;
-        text-decoration: none;
-      }
-
-      div.topbar h2 a:visited {
-        color: #336699;
-      }
-
-      a, a.visited {
-        color: #336699;
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
-      .gsc-search-button{
-        cursor: pointer;
-      }
-    </style>
-
+    <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
+
 <body>
-    <div class="topbar">
-        <h2>TU Dresden Erweiterte Suche</h2>
-        <p>Das Suchen von Inhalten auf den Seiten der TU Dresden macht keinen Spaß. Hier geht's einfacher.</p>
-    </div>
-
-    <gcse:search></gcse:search>
-
-    <div id="footer">
+    <header>
+        <h1><span id="tud">TU Dresden</span> <span id="erw-su">Erweiterte Suche</span></h1>
+    </header>
+    
+    <main>
+      <p>Das Suchen von Inhalten auf den Seiten der TU Dresden macht keinen Spaß.</p>
+      <h2>Hier geht's einfacher!</h2>
+      
+      <div class="grey-bg">
+        <div id="search">
+          <gcse:search></gcse:search>
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <div class="middle">
         <p>Dies ist keine offizielle Seite der TU Dresden. Es wird daher auch keine Haftung für Links und/oder Inhalte übernommen.</p>
-        <p>&copy; Kilian Költzsch, 2015 - <a href="/impressum.html">Impressum</a></p>
-    </div>
+      </div>
+      <div class="middle">
+        <p>&copy; Kilian Költzsch, 2015 - <a href="impressum.html">Impressum</a></p>
+      </div>
+    </footer>
 </body>
 </html>
 
